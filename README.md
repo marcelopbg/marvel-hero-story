@@ -35,3 +35,5 @@ To run in a development environment or if you're not familiar with docker you sh
 
 the application should be available at localhost:5001.
 
+important: application is expected to work properly on port 5001 and not on port 4200.
+
