@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MarvelHeroStory.ApplicationCore\MarvelHeroStory.ApplicationCore.csproj" />
-    <ProjectReference Include="..\MarvelHeroStory\MarvelHeroStory.Web.csproj" />
+    <ProjectReference Include="..\MarvelHeroStory.Web\MarvelHeroStory.Web.csproj" />
   </ItemGroup>
 
 </Project>

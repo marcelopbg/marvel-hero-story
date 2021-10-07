@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarvelHeroStory.Web", "MarvelHeroStory\MarvelHeroStory.Web.csproj", "{83040F7C-F386-4EA1-AFDB-67747D78DC2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarvelHeroStory.Web", "MarvelHeroStory.Web\MarvelHeroStory.Web.csproj", "{83040F7C-F386-4EA1-AFDB-67747D78DC2F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarvelHeroStory.UnitTests", "MarvelHeroStory.UnitTests\MarvelHeroStory.UnitTests.csproj", "{50B6E827-14DB-4035-9968-B46994E37DCA}"
 EndProject
