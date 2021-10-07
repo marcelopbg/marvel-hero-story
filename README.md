@@ -39,6 +39,7 @@ important: application is expected to work properly on port 5001 and not on port
 
 if for some reason you're not able to run the dotnet app on port 5001, 
 you can change the baseUrl environemnt variable in the Angular app in the file "marvel-hero-story/MarvelHeroStory.Web/ClientApp/src/environments/enviroments.ts"
+
 ![image](https://user-images.githubusercontent.com/34853683/136316242-8cb8c26d-ca4f-4c45-bf1b-937c43c820df.png)
 
 
