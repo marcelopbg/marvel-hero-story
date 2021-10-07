@@ -12,7 +12,7 @@ export class StoryService {
   }
 
   getStory(): Observable<IStory> {
-    return this.httpClient.get<IStory>(`${this.baseUrl}/api/story`)
+    return this.httpClient.get<IStory>(`${this.baseUrl}api/story`)
     .pipe(
       tap(_ => console.log('fetched Story'),
       catchError(this.handleError<IStory>('getStory'))
