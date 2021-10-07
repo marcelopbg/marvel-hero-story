@@ -1,0 +1,17 @@
+<div class="loader" *ngIf="isLoading">Loading...</div>
+<div *ngIf="story">
+    <h5 class="text-white">Story </h5>
+    <p class="text-white">{{story.description}}</p>
+    <h5 class="text-white mt-3">Characters:</h5>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" >
+        <div class="col" *ngFor="let character of story.characters"> 
+            <div class="card shadow-sm">
+            <img [src]="character.imageUrl" class="img-thumbnail force-height"/>
+
+              <div class="card-body bg-dark">
+                <b class="card-text">{{character.name}}</b>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
