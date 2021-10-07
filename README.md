@@ -7,9 +7,9 @@ There are two ways of running the application.
 The simplest way is to run it within docker, 
 to do so you must have docker installed and follow the steps below:
 
-- navigate do the repository root folter 
+- navigate to the repository root folder 
 
-- run ```docker build . -t marvel``` (will build the container image, -t is the stands for tag, which we use as a name for the container image).
+- run ```docker build . -t marvel``` (the command will build the container image, "-t" stands for tag, which we use as a name for the container image).
 
 - run ```docker run -d -p 4779:80 --name marvel marvel``` (will create and run a container named "marvel" within the container image built in the last command named as "marvel")
 
@@ -27,7 +27,7 @@ To run in a development environment or if you're not familiar with docker you sh
 
 - Go to the clientApp folder located in "marvel-hero-story/MarvelHeroStory.Web/ClientApp"
 
-- Run ``` npm install && npm start``` (Application will be served in the port 4200)
+- Run ``` npm install && npm start``` (The angular app will be served in the port 4200)
 
 - Go to the parent directory located in "marvel-hero-story/MarvelHeroStory.Web"
 
