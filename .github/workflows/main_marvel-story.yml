@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_27b4fc9031dc40f0a45ea1975bfc5e7b }}/marcelopbg/marvel-story:${{ github.sha }}
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_27b4fc9031dc40f0a45ea1975bfc5e7b }}/marvel-story:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -48,4 +48,4 @@ jobs:
         app-name: 'marvel-story'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_5b9320d632e144f9ac8ee20eda54c713 }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_27b4fc9031dc40f0a45ea1975bfc5e7b }}/marcelopbg/marvel-story:${{ github.sha }}'
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_27b4fc9031dc40f0a45ea1975bfc5e7b }}/marvel-story:${{ github.sha }}'
