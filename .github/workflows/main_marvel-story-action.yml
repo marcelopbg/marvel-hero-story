@@ -32,7 +32,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: marcelopbg/marvel-story:latest
+        tags: marcelopbg/marvel-story
         file: ./Dockerfile
 
   deploy:
