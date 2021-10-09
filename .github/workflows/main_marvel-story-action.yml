@@ -52,4 +52,4 @@ jobs:
         app-name: 'marvel-story-action'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_fa0d877275ee45b4a6f90ca2f12231e4 }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_556af01e243944e8babb37ee56c567a7 }}/marcelopbg/marcelopbg/marvel-story:${{ github.sha }}'
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_556af01e243944e8babb37ee56c567a7 }}/marcelopbg/marvel-story:${{ github.sha }}'
