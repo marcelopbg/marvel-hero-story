@@ -5,11 +5,10 @@ name: Build and deploy container app to Azure Web App - marvel-story-action
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
-    branches: 
-      - main
+    branches: [ main ]
+
   workflow_dispatch:
 
 jobs:
