@@ -5,8 +5,10 @@ name: Build and deploy container app to Azure Web App - marvel-story-action
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    
   workflow_dispatch:
 
 jobs:
@@ -30,7 +32,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_556af01e243944e8babb37ee56c567a7 }}/marcelopbg/marcelopbg/marvel-story:${{ github.sha }}
+        tags: marcelopbg/marvel-story:latest
         file: ./Dockerfile
 
   deploy:
