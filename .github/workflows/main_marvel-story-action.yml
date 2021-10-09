@@ -7,6 +7,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches: 
+      - main
   workflow_dispatch:
 
 jobs:
@@ -30,7 +33,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: marcelopbg/marvel-story
+        tags: marcelopbg/marvel-story:latest
         file: ./Dockerfile
 
   deploy:
